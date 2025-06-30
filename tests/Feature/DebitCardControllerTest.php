@@ -306,7 +306,7 @@ class DebitCardControllerTest extends TestCase
             'is_active' => true,
         ]);
 
-        $response->assertStatus(422); // atau 400 tergantung rule lu
+        $response->assertStatus(422); // Expired cards cannot be activated
     }
     
 
